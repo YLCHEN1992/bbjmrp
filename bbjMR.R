@@ -39,7 +39,7 @@ fbbj$data=fbbj$data[match(insnps,(fbbj$data)$SNP),]
 bbjx=bbjx[match(insnps,bbjx$SNP),]
 
 fdata=cbind(fbbj$data,bbjx)[,c(1:18)]
-colnames(fdata)=c(paste0("exp_",colnames(bbjx)),paste0("out_",colnames(bbjx)))
+colnames(fdata)=c(paste0("exp_",na.omit(colnames(bbjx))),paste0("out_",na.omit(colnames(bbjx))))
 x1=as.numeric(fdata[,6]);x1se=as.numeric(fdata[,7])
 x3=as.numeric(fdata[,15]);x3se=as.numeric(fdata[,16])
 

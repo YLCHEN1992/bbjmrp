@@ -1,2 +1,2 @@
-**Fast MR Analysis script based on GWAS data**\n
+**Fast MR Analysis script based on GWAS data**<br>
   Waiting to edit ... ...
